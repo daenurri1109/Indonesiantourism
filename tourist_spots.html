@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Transaksi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="culture.html">Kebudayaan</a></li>
+                <li><a href="tourist_spots.html">Tempat Wisata</a></li>
+                <li><a href="hotels.html">Hotel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulir Transaksi</h2>
+            <form id="transactionForm">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="destination">Tujuan Wisata:</label>
+                <select id="destination" name="destination" required>
+                    <option value="bali">Bali</option>
+                    <option value="yogyakarta">Yogyakarta</option>
+                    <option value="raja_ampat">Raja Ampat</option>
+                </select>
+                <label for="hotel">Pilih Hotel:</label>
+                <select id="hotel" name="hotel" required>
+                    <option value="mulia">Hotel Mulia</option>
+                    <option value="hyatt">Grand Hyatt</option>
+                    <option value="kempinski">Hotel Indonesia Kempinski</option>
+                </select>
+                <label for="checkin">Tanggal Check-in:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                <label for="checkout">Tanggal Check-out:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indonesian Tourism</p>
+    </footer>
+</body>
+</html>
